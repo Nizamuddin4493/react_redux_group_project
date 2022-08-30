@@ -4,12 +4,15 @@
   box-sizing: border-box;
 }
 
+/* APP Component Styles*/
 .appContainer {
   margin: 10px auto;
   max-width: 1100px;
   min-height: 100px;
 }
+/* END APP Component Styles*/
 
+/* Header Component CSS */
 .headContainer {
   margin: 0;
   height: 70px;
@@ -20,7 +23,13 @@
 .headContainer [name="logo"] {
   display: flex;
   align-items: center;
-  width: 300px;
+  width: 400px;
+}
+
+.headContainer img {
+  width: 50px;
+  height: 50px;
+  margin: 0 15px 0 10px;
 }
 
 .headContainer [name="links"] {
@@ -40,14 +49,15 @@
   list-style-type: none;
   margin: 0 10px;
   cursor: pointer;
-  color: rgb(114, 114, 206);
 }
 
 .reactLink {
+  color: rgb(79, 79, 255);
   text-decoration: none;
-  color: blueviolet;
 }
 
 .active {
+  color: rgb(79, 79, 255);
   font-size: 17px;
 }
+/* END Header Component CSS */

@@ -1,3 +1,4 @@
+/* Mission Component Styles*/
 .missionConatiner {
   margin: 10px 10px;
   display: flex;
@@ -24,3 +25,116 @@
   background-color: rgb(79, 79, 255);
   border-radius: 5px;
 }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  margin: 20px auto;
+}
+
+td, th {
+  border: 1px solid rgb(165, 165, 165);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Button styles for Mission Table */
+.notAMemberBtn {
+  font-size: 12px;
+  padding: 5px;
+  background-color: rgb(66, 66, 66);
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.joinMemberBtn {
+  padding: 5px;
+  border: 1px solid rgb(66, 66, 66);
+  background-color: transparent;
+  color: rgb(66, 66, 66);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.activeMemberBtn {
+  border-radius: 3px;
+  background-color: rgb(79, 79, 255);
+  color: #fff;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.leaveMissionBtn {
+  padding: 5px;
+  border: 1px solid rgb(255, 0, 0);
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* END Button styles for Mission Table */
+
+.missionTitle {
+  margin: 0;
+  padding-top: 0;
+  font-weight: 700;
+}
+/* END Mission Component Styles*/
+
+/* ------------------------------------- */
+
+/* My Profile Component Styles*/
+.profileContainer {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.missionSection {
+  width: 48%;
+}
+
+.missionSection [name="missonList"] {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.missionSection li {
+  padding: 10px 10px;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.missionSection li:last-child {
+  list-style-type: none;
+  border-bottom: none;
+}
+
+.rocketSection {
+  width: 48%;
+}
+
+.rocketSection [name="rocketList"] {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.rocketSection li {
+  padding: 10px 10px;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.rocketSection li:last-child {
+  list-style-type: none;
+  border-bottom: none;
+}
+/* END My Profile Component Styles*/

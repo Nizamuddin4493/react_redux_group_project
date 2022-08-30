@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import planet from './images/planet.png'
 
 const Header = () => {
   
@@ -7,7 +8,8 @@ const Header = () => {
     <>
       <div className="headContainer">
         <div name="logo">
-          Logo
+          <img src={ planet } alt="Planet" />
+          <h1>Space Travelers' Hub</h1>
         </div>
         <div name="links">
           <ul>

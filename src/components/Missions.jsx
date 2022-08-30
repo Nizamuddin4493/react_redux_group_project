@@ -2,7 +2,38 @@ import React from 'react';
 
 const Missions = () => (
   <>
-    <h1>Mission</h1>
+    <table>
+  <tr>
+    <th style={{width: "12%"}}>Mission</th>
+    <th style={{width: "60%"}}>Description</th>
+    <th>Status</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td className="missionTitle"> Alfreds Futterkiste</td>
+    <td>Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria Anders Maria AndersMaria Anders Maria AndersMaria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria Anders Maria Anders  Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders</td>
+    <td><button className="notAMemberBtn">NOT A MEMBER</button></td>
+    <td><button className="joinMemberBtn">Join Mission</button></td>
+  </tr>
+  <tr>
+    <td className="missionTitle">Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td><button className="activeMemberBtn">Active Member</button></td>
+    <td><button className="leaveMissionBtn">Leave Mission</button></td>
+  </tr>
+  <tr>
+    <td className="missionTitle">Ernst Handel</td>
+    <td> Maria AndersMaria Anders Maria AndersMaria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria Anders Maria Anders  Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Andersl</td>
+    <td><button className="notAMemberBtn">NOT A MEMBER</button></td>
+    <td><button className="joinMemberBtn">Join Mission</button></td>
+  </tr>
+  <tr>
+    <td className="missionTitle">Island Trading</td>
+    <td>Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria Anders Maria AndersMaria Anders Maria AndersMaria Anders Maria Anders Maria Anders Maria Anders Ma</td>
+    <td><button className="notAMemberBtn">NOT A MEMBER</button></td>
+    <td><button className="joinMemberBtn">Join Mission</button></td>
+  </tr>
+</table>
   </>
 );
 
