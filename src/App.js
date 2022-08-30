@@ -1,5 +1,6 @@
 import Header from './components/Header';
-import Missions from './components/Missions';
+// import Missions from './components/Missions';
+import Rockets from './components/Rockets';
 
 function App() {
   return (
@@ -7,10 +8,11 @@ function App() {
       <div className="appContainer">
         <Header />
         <hr />
-        <Missions />
+        {/* <Missions /> */}
+        <Rockets />
       </div>
     </>
-);
+  );
 }
 
 export default App;
