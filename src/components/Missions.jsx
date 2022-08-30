@@ -1,18 +1,39 @@
 import React from 'react';
-import test from './FB_IMG_1534950152549.jpg'
 
 const Missions = () => (
   <>
-    <div className="missionConatiner">
-      <div>
-        <img src={test} alt="Mission" />
-      </div>
-      <div name="info">
-        <div><h2>Falcon 1</h2></div>
-        <div><p> ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f kje;f kje ;fklje ;fkje ;fej ;flejf;lkej f;lejdf ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f kje;f kje ;fklje ;fkje ;fej ;flejf;lkej f;lejdf ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f kje;f kje ;fklje ;fkje ;fej ;flejf;lkej f;lejdf ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f kje;f kje ;fklje ;fkje ;fej ;flejf;lkej f;lejdf ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f kje;f kje ;fklje ;fkje ;fej ;flejf;lkej f;lejdf</p></div>
-        <div><button>Reserve Rocket</button></div>
-      </div>
-    </div>
+    <table>
+  <tr>
+    <th style={{width: "12%"}}>Mission</th>
+    <th style={{width: "60%"}}>Description</th>
+    <th>Status</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td className="missionTitle"> Alfreds Futterkiste</td>
+    <td>Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria Anders Maria AndersMaria Anders Maria AndersMaria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria Anders Maria Anders  Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders</td>
+    <td><button className="notAMemberBtn">NOT A MEMBER</button></td>
+    <td><button className="joinMemberBtn">Join Mission</button></td>
+  </tr>
+  <tr>
+    <td className="missionTitle">Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td><button className="activeMemberBtn">Active Member</button></td>
+    <td><button className="leaveMissionBtn">Leave Mission</button></td>
+  </tr>
+  <tr>
+    <td className="missionTitle">Ernst Handel</td>
+    <td> Maria AndersMaria Anders Maria AndersMaria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria Anders Maria Anders  Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria Andersl</td>
+    <td><button className="notAMemberBtn">NOT A MEMBER</button></td>
+    <td><button className="joinMemberBtn">Join Mission</button></td>
+  </tr>
+  <tr>
+    <td className="missionTitle">Island Trading</td>
+    <td>Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria Anders Maria AndersMaria Anders Maria AndersMaria Anders Maria Anders Maria Anders Maria Anders Ma</td>
+    <td><button className="notAMemberBtn">NOT A MEMBER</button></td>
+    <td><button className="joinMemberBtn">Join Mission</button></td>
+  </tr>
+</table>
   </>
 );
 
