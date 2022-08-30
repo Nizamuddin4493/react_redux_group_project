@@ -5,7 +5,7 @@
 > In this porject, We worked with the real live data from the SpaceX API. We build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 # Live Demo
-[Space Travelers Hub](www.google.com)
+[Space Travelers Hub](www.google.com) 
 
 
 ## Setup
@@ -44,8 +44,8 @@ $ npm test
 👤 **Rejoice Evans**
 
 - GitHub: [@rmjspecial](https://github.com/rmjspecial)
-- Twitter: [@rmjspecial](https://twitter.com)
-- LinkedIn: [rmjspecial](https://linkedin.com)
+- Twitter: [@rmjspecial](https://twitter.com/rmjspecial2)
+- LinkedIn: [rmjspecial](https://www.linkedin.com/in/rejoice-evans-74882122a/)
 
 
 ## 🤝 Contributing

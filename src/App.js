@@ -10,7 +10,7 @@ function App() {
         <Missions />
       </div>
     </>
-  );
+);
 }
 
 export default App;
