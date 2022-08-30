@@ -1,7 +1,14 @@
+import Header from './components/Header';
+import Missions from './components/Missions';
+
 function App() {
   return (
     <>
-      <h1>Hello Nizam</h1>
+      <div className="appContainer">
+        <Header />
+        <hr />
+        <Missions />
+      </div>
     </>
   );
 }
