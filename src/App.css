@@ -4,13 +4,14 @@
   box-sizing: border-box;
 }
 
-/* APP Component Styles*/
+/* APP Component Styles */
 .appContainer {
   margin: 10px auto;
   max-width: 1100px;
   min-height: 100px;
 }
-/* END APP Component Styles*/
+
+/* END APP Component Styles */
 
 /* Header Component CSS */
 .headContainer {
@@ -60,4 +61,5 @@
   color: rgb(79, 79, 255);
   font-size: 17px;
 }
+
 /* END Header Component CSS */

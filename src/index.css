@@ -1,4 +1,4 @@
-/* Mission Component Styles*/
+/* Mission Component Styles */
 .missionConatiner {
   margin: 10px 10px;
   display: flex;
@@ -33,14 +33,15 @@ table {
   margin: 20px auto;
 }
 
-td, th {
+td,
+th {
   border: 1px solid rgb(165, 165, 165);
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 /* Button styles for Mission Table */
@@ -80,6 +81,7 @@ tr:nth-child(even) {
   border-radius: 3px;
   cursor: pointer;
 }
+
 /* END Button styles for Mission Table */
 
 .missionTitle {
@@ -87,11 +89,12 @@ tr:nth-child(even) {
   padding-top: 0;
   font-weight: 700;
 }
-/* END Mission Component Styles*/
+
+/* END Mission Component Styles */
 
 /* ------------------------------------- */
 
-/* My Profile Component Styles*/
+/* My Profile Component Styles */
 .profileContainer {
   margin: 10px 10px;
   display: flex;
@@ -113,6 +116,12 @@ tr:nth-child(even) {
   border-bottom: 1px solid #ddd;
 }
 
+.rocketSection li {
+  padding: 10px 10px;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+}
+
 .missionSection li:last-child {
   list-style-type: none;
   border-bottom: none;
@@ -127,14 +136,9 @@ tr:nth-child(even) {
   border-radius: 3px;
 }
 
-.rocketSection li {
-  padding: 10px 10px;
-  list-style-type: none;
-  border-bottom: 1px solid #ddd;
-}
-
 .rocketSection li:last-child {
   list-style-type: none;
   border-bottom: none;
 }
-/* END My Profile Component Styles*/
+
+/* END My Profile Component Styles */
