@@ -1,5 +1,5 @@
 import React from 'react';
-import test from './FB_IMG_1534950152549.jpg'
+import test from './images/FB_IMG_1534950152549.jpg'
 
 const Missions = () => (
   <>
