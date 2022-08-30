@@ -2,7 +2,7 @@ import React from 'react';
 
 const MyProfile = () => (
   <>
-    dfdf
+    <h1>My Profile.</h1>
   </>
 );
 

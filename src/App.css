@@ -43,29 +43,11 @@
   color: rgb(114, 114, 206);
 }
 
-.missionConatiner {
-  margin: 10px 10px;
-  display: flex;
+.reactLink {
+  text-decoration: none;
+  color: blueviolet;
 }
 
-.missionConatiner img {
-  width: 170px;
-  height: 150px;
-}
-
-.missionConatiner [name="info"] {
-  padding-left: 10px;
-}
-
-.missionConatiner p {
-  padding: 5px 0;
-}
-
-.missionConatiner button {
-  margin: 5px 0;
-  padding: 10px;
-  border: none;
-  color: #fff;
-  background-color: rgb(79, 79, 255);
-  border-radius: 5px;
+.active {
+  font-size: 17px;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Missions = () => (
   <>
-    dfdf
+    <h1>Mission</h1>
   </>
 );
 

@@ -1,6 +1,8 @@
+import { Route, Routes } from 'react-router';
 import Header from './components/Header';
-// import Missions from './components/Missions';
+import Missions from './components/Missions';
 import Rockets from './components/Rockets';
+import MyProfile from './components/MyProfile';
 
 function App() {
   return (
@@ -8,8 +10,11 @@ function App() {
       <div className="appContainer">
         <Header />
         <hr />
-        {/* <Missions /> */}
-        <Rockets />
+        <Routes>
+          <Route path="/" element={<Rockets />} />
+          <Route path="/missions" element={<Missions />} />
+          <Route path="/myProfile" element={<MyProfile />} />
+        </Routes>
       </div>
     </>
   );
