@@ -7,11 +7,11 @@ const Missions = () => (
         <th style={{ width: '12%' }}>Mission</th>
         <th style={{ width: '60%' }}>Description</th>
         <th>Status</th>
-        <th> -- </th>
+        <th>---</th>
       </tr>
       <tr>
         <td className="missionTitle"> Alfreds Futterkiste</td>
-        <td>Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria </td>
+        <td>Maria Anders Maria Anders Maria Anders Maria Anders</td>
         <td><button type="button" className="notAMemberBtn">NOT A MEMBER</button></td>
         <td><button type="button" className="joinMemberBtn">Join Mission</button></td>
       </tr>
@@ -23,13 +23,7 @@ const Missions = () => (
       </tr>
       <tr>
         <td className="missionTitle">Ernst Handel</td>
-        <td> Maria AndersMaria Anders Maria AndersMaria Anders Maria Anders Maria Anders</td>
-        <td><button type="button" className="notAMemberBtn">NOT A MEMBER</button></td>
-        <td><button type="button" className="joinMemberBtn">Join Mission</button></td>
-      </tr>
-      <tr>
-        <td className="missionTitle">Island Trading</td>
-        <td>Maria Anders Maria Anders Maria Anders Maria Anders Maria Anders Maria AndersMaria </td>
+        <td> Maria AndersMaria Anders Maria AndersMaria Anders Maria</td>
         <td><button type="button" className="notAMemberBtn">NOT A MEMBER</button></td>
         <td><button type="button" className="joinMemberBtn">Join Mission</button></td>
       </tr>

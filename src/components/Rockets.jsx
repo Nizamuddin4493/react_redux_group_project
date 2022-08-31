@@ -9,7 +9,7 @@ const Rockets = () => (
       </div>
       <div name="info">
         <div><h2>Falcon 1</h2></div>
-        <div><p> ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f kje;f kje </p></div>
+        <div><p> ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f</p></div>
         <div><button type="button">Reserve Rocket</button></div>
       </div>
     </div>
@@ -20,18 +20,7 @@ const Rockets = () => (
       </div>
       <div name="info">
         <div><h2>Falcon 1</h2></div>
-        <div><p> ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f kje;f kje</p></div>
-        <div><button type="button">Reserve Rocket</button></div>
-      </div>
-    </div>
-
-    <div className="missionConatiner">
-      <div>
-        <img src={test} alt="Mission" />
-      </div>
-      <div name="info">
-        <div><h2>Falcon 1</h2></div>
-        <div><p> ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f kje;f </p></div>
+        <div><p> ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f</p></div>
         <div><button type="button">Reserve Rocket</button></div>
       </div>
     </div>
