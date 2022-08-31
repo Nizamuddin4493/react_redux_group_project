@@ -21,7 +21,6 @@ const Header = () => (
               Rockets
             </NavLink>
           </li>
-
           <li>
             <NavLink
               to="/missions"
