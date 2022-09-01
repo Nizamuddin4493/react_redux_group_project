@@ -12,12 +12,12 @@ function Missions() {
   console.log(missions);
   return (
     <div>
-      {missions.map((mission) => (
+      {/* {missions.map((mission) => (
         <div key={mission.id}>
           <h2>{mission.rocketName}</h2>
           <p>{mission.description}</p>
         </div>
-      ))}
+      ))} */}
 
     </div>
   );

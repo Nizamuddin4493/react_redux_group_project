@@ -4,7 +4,7 @@ const inititalState = [];
 
 const missions = (state = inititalState, action) => {
   switch (action.type) {
-    case `${actions.GET_MISSIONS}/fulfilled`:
+    case `${actions.GET_MISSIONS}`:
       return action.payload;
     default:
       return state;
