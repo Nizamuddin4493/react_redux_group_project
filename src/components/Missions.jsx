@@ -1,25 +1,33 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import getMissions from '../redux/actions/index';
+import { useSelector } from 'react-redux';
+import { missionThunk } from '../redux/missions/mission';
 
 function Missions() {
-  const dispatch = useDispatch();
-
+  const missions = useSelector((state) => state.missionReducer);
   useEffect(() => {
-    dispatch(getMissions());
-  }, []);
-  const missions = useSelector((state) => state.getMissions);
-  console.log(missions);
+    missionThunk();
+  }, [missions]);
   return (
-    <div>
-      {/* {missions.map((mission) => (
-        <div key={mission.id}>
-          <h2>{mission.rocketName}</h2>
-          <p>{mission.description}</p>
-        </div>
-      ))} */}
-
-    </div>
+    <>
+      <table>
+        <tbody>
+          <tr>
+            <th style={{ width: '12%' }}>Mission</th>
+            <th style={{ width: '60%' }}>Description</th>
+            <th>Status</th>
+            <th>---</th>
+          </tr>
+          { missions.map((data) => (
+            <tr key={data.mission_id}>
+              <td className="missionTitle">{data.mission_name}</td>
+              <td>{data.description}</td>
+              <td><button type="button" className="notAMemberBtn">NOT A MEMBER</button></td>
+              <td><button type="button" className="joinMemberBtn">Join Mission</button></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 }
 
