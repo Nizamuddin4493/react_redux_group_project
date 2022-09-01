@@ -1,30 +1,33 @@
-import React from 'react';
-import test from './images/FB_IMG_1534950152549.jpg';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { rockets } from '../redux/rockets/rockets';
 
-const Rockets = () => (
-  <>
-    <div className="missionConatiner">
-      <div>
-        <img src={test} alt="Mission" />
-      </div>
-      <div name="info">
-        <div><h2>Falcon 1</h2></div>
-        <div><p> ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f</p></div>
-        <div><button type="button">Reserve Rocket</button></div>
-      </div>
-    </div>
+const Rockets = () => {
+  const store = useSelector((state) => state.rocketReducer);
+  console.log(store);
+  useEffect(() => {
+    rockets();
+  }, [store]);
 
-    <div className="missionConatiner">
-      <div>
-        <img src={test} alt="Mission" />
-      </div>
-      <div name="info">
-        <div><h2>Falcon 1</h2></div>
-        <div><p> ekjkfejhf;ekhf;ek fekljf ;ekhf;ekjfh ;keh;f jhe; fkjeh; fkje;f</p></div>
-        <div><button type="button">Reserve Rocket</button></div>
-      </div>
-    </div>
-  </>
-);
-
+  return (
+    <>
+      { store.map((rData) => (
+        <div className="missionConatiner" key={rData.id}>
+          <div>
+            <img src={rData.flickr_images} alt={rData.rocket_name} />
+          </div>
+          <div name="info">
+            <div><h2>{ rData.rocket_name }</h2></div>
+            <div>
+              <p>
+                { rData.description }
+              </p>
+            </div>
+            <div><button type="button" key={rData.id}>Reserve Rocket</button></div>
+          </div>
+        </div>
+      ))}
+    </>
+  );
+};
 export default Rockets;
