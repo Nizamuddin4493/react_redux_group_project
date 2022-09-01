@@ -1,7 +1,14 @@
-import React from 'react';
+import * as actions from '../types';
 
-const mission = () => (
-  <div>mission</div>
-);
+const inititalState = [];
 
-export default mission;
+const missions = (state = inititalState, action) => {
+  switch (action.type) {
+    case `${actions.GET_MISSIONS}`:
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
+export default missions;

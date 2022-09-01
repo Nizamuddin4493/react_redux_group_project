@@ -1,34 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import getMissions from '../redux/actions/index';
 
-const Missions = () => (
-  <>
-    <table>
-      <tr>
-        <th style={{ width: '12%' }}>Mission</th>
-        <th style={{ width: '60%' }}>Description</th>
-        <th>Status</th>
-        <th>---</th>
-      </tr>
-      <tr>
-        <td className="missionTitle"> Alfreds Futterkiste</td>
-        <td>Maria Anders Maria Anders Maria Anders Maria Anders</td>
-        <td><button type="button" className="notAMemberBtn">NOT A MEMBER</button></td>
-        <td><button type="button" className="joinMemberBtn">Join Mission</button></td>
-      </tr>
-      <tr>
-        <td className="missionTitle">Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td><button type="button" className="activeMemberBtn">Active Member</button></td>
-        <td><button type="button" className="leaveMissionBtn">Leave Mission</button></td>
-      </tr>
-      <tr>
-        <td className="missionTitle">Ernst Handel</td>
-        <td> Maria AndersMaria Anders Maria AndersMaria Anders Maria</td>
-        <td><button type="button" className="notAMemberBtn">NOT A MEMBER</button></td>
-        <td><button type="button" className="joinMemberBtn">Join Mission</button></td>
-      </tr>
-    </table>
-  </>
-);
+function Missions() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMissions());
+  }, []);
+  const missions = useSelector((state) => state.getMissions);
+  console.log(missions);
+  return (
+    <div>
+      {/* {missions.map((mission) => (
+        <div key={mission.id}>
+          <h2>{mission.rocketName}</h2>
+          <p>{mission.description}</p>
+        </div>
+      ))} */}
+
+    </div>
+  );
+}
 
 export default Missions;
