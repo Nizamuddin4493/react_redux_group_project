@@ -37,6 +37,17 @@
   cursor: pointer;
 }
 
+.whenReserved {
+  margin: 3px 0;
+  padding: 3px;
+  border: none;
+  color: #fff;
+  background-color: rgb(79, 79, 255);
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
