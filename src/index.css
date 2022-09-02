@@ -62,15 +62,27 @@ tr:nth-child(even) {
   color: rgb(66, 66, 66);
   border-radius: 3px;
   cursor: pointer;
+  width: 100px;
 }
 
-.activeMemberBtn {
+.LeaveMemberBtn {
+  padding: 5px;
+  border: 1px solid rgb(255, 0, 0);
+  background-color: transparent;
+  color: rgb(255, 0, 0);
   border-radius: 3px;
-  background-color: rgb(79, 79, 255);
+  cursor: pointer;
+  width: 100px;
+}
+
+.activeMember {
+  border-radius: 3px;
+  background-color: rgb(119, 119, 253);
   color: #fff;
   padding: 5px;
   border: none;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .leaveMissionBtn {
