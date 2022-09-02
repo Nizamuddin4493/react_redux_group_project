@@ -39,8 +39,8 @@ export default function missionReducer(state = INITIAL_STATE, action) {
       return [...action.payload];
     case JION_MISSION:
       return state.map((mission) => {
-        if (mission.id === action.payload) return mission;
-        return { ...mission, reserved: true };
+        if (mission.mission_id !== action.payload) return mission;
+        return { ...mission, reserved: !mission.reserved };
       });
     default:
       return state;
