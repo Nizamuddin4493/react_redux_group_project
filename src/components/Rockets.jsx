@@ -21,6 +21,9 @@ const Rockets = () => {
             <div><h2>{ rData.rocket_name }</h2></div>
             <div>
               <p>
+                { rData.reserved ? (
+                  <button type="button" className="whenReserved" key={rData.id} onClick={() => dispatch(cancelRocket(rData.id))}>Reserved</button>
+                ) : '' }
                 { rData.description }
               </p>
             </div>
