@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { missionThunk } from '../redux/missions/mission';
+import { useSelector, useDispatch } from 'react-redux';
+import { missionThunk, joinMission } from '../redux/missions/mission';
 
 function Missions() {
   const missions = useSelector((state) => state.missionReducer);
   useEffect(() => {
     missionThunk();
   }, [missions]);
+
+  const dispatch = useDispatch();
+
   return (
     <>
       <table>
@@ -17,12 +20,24 @@ function Missions() {
             <th>Status</th>
             <th>---</th>
           </tr>
-          { missions.map((data) => (
+          {missions.map((data) => (
             <tr key={data.mission_id}>
               <td className="missionTitle">{data.mission_name}</td>
               <td>{data.description}</td>
-              <td><button type="button" className="notAMemberBtn">NOT A MEMBER</button></td>
-              <td><button type="button" className="joinMemberBtn">Join Mission</button></td>
+              <td>
+                <p className="notAMemberBtn">{ data.reserved ? 'Active member' : 'NOT A MEMBER'}</p>
+              </td>
+              <td>
+                {data.reserved ? (
+                  <button type="button">
+                    Leave
+                  </button>
+                ) : (
+                  <button type="button" onClick={() => dispatch(joinMission(data.mission_id))}>
+                    Join
+                  </button>
+                )}
+              </td>
             </tr>
           ))}
         </tbody>
