@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { rockets } from '../redux/rockets/rockets';
+import { useSelector, useDispatch } from 'react-redux';
+import { rockets, reserveRocket } from '../redux/rockets/rockets';
 
 const Rockets = () => {
   const store = useSelector((state) => state.rocketReducer);
-  console.log(store);
   useEffect(() => {
     rockets();
   }, [store]);
+
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -23,7 +24,7 @@ const Rockets = () => {
                 { rData.description }
               </p>
             </div>
-            <div><button type="button" key={rData.id}>Reserve Rocket</button></div>
+            <div><button type="button" key={rData.id} onClick={() => dispatch(reserveRocket(rData.id))}>Reserve Rocket</button></div>
           </div>
         </div>
       ))}
