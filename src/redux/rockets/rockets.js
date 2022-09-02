@@ -1,11 +1,19 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const GET_ROCKETS = 'get_rockets';
+const RESERVE_ROCKETS = 'reserve_rockets';
 const INITIAL_STATE = [];
 
 export function rocketData(payload) {
   return {
     type: GET_ROCKETS,
+    payload,
+  };
+}
+
+export function reserveRocket(payload) {
+  return {
+    type: RESERVE_ROCKETS,
     payload,
   };
 }
@@ -20,6 +28,7 @@ export const rockets = createAsyncThunk(
       rocket_name: data.rocket_name,
       description: data.description,
       flickr_images: data.flickr_images,
+      reserved: false,
     }));
     return fetchRocketData;
   },
@@ -29,6 +38,11 @@ export default function rocketReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case `${GET_ROCKETS}/fulfilled`:
       return [...action.payload];
+    case RESERVE_ROCKETS:
+      return state.map((rocket) => {
+        if (rocket.id !== action.payload) return rocket;
+        return { ...rocket, reserved: !rocket.reserved };
+      });
     default:
       return state;
   }

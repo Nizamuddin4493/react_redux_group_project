@@ -24,6 +24,7 @@
   color: #fff;
   background-color: rgb(79, 79, 255);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 table {
