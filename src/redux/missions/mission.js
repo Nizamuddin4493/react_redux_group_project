@@ -2,6 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 export const GET_MISSIONS = 'get_missions';
 export const JION_MISSION = 'join_missions';
+export const LEAVE_MISSION = 'leave_missions';
 const INITIAL_STATE = [];
 
 export function missionsAction(payload) {
@@ -15,6 +16,13 @@ export function joinMission(id) {
   return {
     type: JION_MISSION,
     payload: id,
+  };
+}
+
+export function leaveMission(payload) {
+  return {
+    type: LEAVE_MISSION,
+    payload,
   };
 }
 
@@ -41,6 +49,11 @@ export default function missionReducer(state = INITIAL_STATE, action) {
       return state.map((mission) => {
         if (mission.mission_id !== action.payload) return mission;
         return { ...mission, reserved: !mission.reserved };
+      });
+    case LEAVE_MISSION:
+      return state.map((missionLeave) => {
+        if (missionLeave.mission_id !== action.payload) return missionLeave;
+        return { ...missionLeave, reserved: !missionLeave.reserved };
       });
     default:
       return state;

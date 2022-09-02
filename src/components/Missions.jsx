@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { missionThunk, joinMission } from '../redux/missions/mission';
+import { missionThunk, joinMission, leaveMission } from '../redux/missions/mission';
 
 function Missions() {
   const missions = useSelector((state) => state.missionReducer);
@@ -29,7 +29,7 @@ function Missions() {
               </td>
               <td>
                 {data.reserved ? (
-                  <button type="button" className="LeaveMemberBtn">
+                  <button type="button" onClick={() => dispatch(leaveMission(data.mission_id))} className="LeaveMemberBtn">
                     Leave Mission
                   </button>
                 ) : (
