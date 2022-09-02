@@ -17,7 +17,7 @@
   padding: 5px 0;
 }
 
-.missionConatiner button {
+.reserveRocket {
   margin: 5px 0;
   padding: 10px;
   border: none;
@@ -25,6 +25,27 @@
   background-color: rgb(79, 79, 255);
   border-radius: 5px;
   cursor: pointer;
+}
+
+.cancelRocketBtn {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid rgb(77, 77, 77);
+  color: rgb(77, 77, 77);
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.whenReserved {
+  margin: 3px 0;
+  padding: 3px;
+  border: none;
+  color: #fff;
+  background-color: rgb(79, 79, 255);
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 table {
@@ -53,7 +74,8 @@ tr:nth-child(even) {
   color: #fff;
   border-radius: 3px;
   border: none;
-  cursor: pointer;
+  width: 120px;
+  text-align: center;
 }
 
 .joinMemberBtn {
@@ -82,8 +104,9 @@ tr:nth-child(even) {
   color: #fff;
   padding: 5px;
   border: none;
-  cursor: pointer;
   font-size: 14px;
+  width: 120px;
+  text-align: center;
 }
 
 .leaveMissionBtn {

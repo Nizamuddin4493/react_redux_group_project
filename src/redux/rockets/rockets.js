@@ -2,6 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const GET_ROCKETS = 'get_rockets';
 const RESERVE_ROCKETS = 'reserve_rockets';
+const CANCEL_ROCKETS = 'cancel_rockets';
 const INITIAL_STATE = [];
 
 export function rocketData(payload) {
@@ -14,6 +15,13 @@ export function rocketData(payload) {
 export function reserveRocket(payload) {
   return {
     type: RESERVE_ROCKETS,
+    payload,
+  };
+}
+
+export function cancelRocket(payload) {
+  return {
+    type: CANCEL_ROCKETS,
     payload,
   };
 }
@@ -42,6 +50,11 @@ export default function rocketReducer(state = INITIAL_STATE, action) {
       return state.map((rocket) => {
         if (rocket.id !== action.payload) return rocket;
         return { ...rocket, reserved: !rocket.reserved };
+      });
+    case CANCEL_ROCKETS:
+      return state.map((rocketCancel) => {
+        if (rocketCancel.id !== action.payload) return rocketCancel;
+        return { ...rocketCancel, reserved: !rocketCancel.reserved };
       });
     default:
       return state;
