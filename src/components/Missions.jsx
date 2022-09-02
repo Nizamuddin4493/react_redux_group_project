@@ -25,16 +25,16 @@ function Missions() {
               <td className="missionTitle">{data.mission_name}</td>
               <td>{data.description}</td>
               <td>
-                <p className="notAMemberBtn">{ data.reserved ? 'Active member' : 'NOT A MEMBER'}</p>
+                { data.reserved ? <p className="activeMember">Active Member</p> : <p className="notAMemberBtn">NOT A MEMBER</p> }
               </td>
               <td>
                 {data.reserved ? (
-                  <button type="button">
-                    Leave
+                  <button type="button" className="LeaveMemberBtn">
+                    Leave Mission
                   </button>
                 ) : (
-                  <button type="button" onClick={() => dispatch(joinMission(data.mission_id))}>
-                    Join
+                  <button type="button" onClick={() => dispatch(joinMission(data.mission_id))} className="joinMemberBtn">
+                    Join Mission
                   </button>
                 )}
               </td>
