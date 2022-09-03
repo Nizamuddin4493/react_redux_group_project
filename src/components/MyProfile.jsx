@@ -2,8 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const MyProfile = () => {
-  const store = useSelector((state) => state.missionReducer);
-  const reservedMissions = store.filter((mission) => mission.reserved === true);
+  const missionStore = useSelector((state) => state.missionReducer);
+  const reservedMissions = missionStore.filter((mission) => mission.reserved === true);
 
   return (
     <>
