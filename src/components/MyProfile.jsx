@@ -5,6 +5,9 @@ const MyProfile = () => {
   const missionStore = useSelector((state) => state.missionReducer);
   const reservedMissions = missionStore.filter((mission) => mission.reserved === true);
 
+  const rocketStore = useSelector((state) => state.rocketReducer);
+  const reservedRocket = rocketStore.filter((mission) => mission.reserved === true);
+
   return (
     <>
       <div className="profileContainer">
@@ -21,9 +24,11 @@ const MyProfile = () => {
         <div className="rocketSection">
           <h1>My Rockets</h1>
           <div name="rocketList">
-            <li>Some text goes her</li>
-            <li>Some text goes her</li>
-            <li>Some text goes her</li>
+            { reservedRocket.map((rocket) => (
+              <li key={rocket.id}>
+                {rocket.rocket_name}
+              </li>
+            ))}
           </div>
         </div>
       </div>
