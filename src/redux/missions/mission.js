@@ -1,8 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-export const GET_MISSIONS = 'get_missions';
-export const JION_MISSION = 'join_missions';
-export const LEAVE_MISSION = 'leave_missions';
+export const GET_MISSIONS = './SpaceTravelet/components/GET_MISSIONS';
+export const JION_MISSION = './SpaceTravelet/components/JION_MISSION';
+export const LEAVE_MISSION = './SpaceTravelet/components/LEAVE_MISSION';
 const INITIAL_STATE = [];
 
 export function missionsAction(payload) {

@@ -1,8 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const GET_ROCKETS = 'get_rockets';
-const RESERVE_ROCKETS = 'reserve_rockets';
-const CANCEL_ROCKETS = 'cancel_rockets';
+const GET_ROCKETS = './SpaceTravelet/components/GET_ROCKETS';
+const RESERVE_ROCKETS = './SpaceTravelet/components/RESERVE_ROCKETS';
+const CANCEL_ROCKETS = './SpaceTravelet/components/CANCEL_ROCKETS';
 const INITIAL_STATE = [];
 
 export function rocketData(payload) {
