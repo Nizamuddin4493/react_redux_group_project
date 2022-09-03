@@ -38,7 +38,7 @@
 }
 
 .whenReserved {
-  margin: 3px 0;
+  margin: 3px 5px 3px 0;
   padding: 3px;
   border: none;
   color: #fff;
@@ -46,6 +46,7 @@
   border-radius: 3px;
   font-size: 10px;
   font-weight: 700;
+  cursor: text;
 }
 
 table {
